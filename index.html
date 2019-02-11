@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="apple-itunes-app" content="app-id=1062353662" />
+  <title>Ejemplo</title>
+
+  <link rel="stylesheet" type="text/css" href="css/dice.css" />
+  <link rel="stylesheet" media="screen and (min-width: 700px) and (min-height: 800px)" href="css/iPad.css" />
+
+  <script type="text/javascript">
+    if (location.hostname.indexOf("speedymarks") >= 0) {
+      window.open(location.href.replace(/speedymarks/, "iphonemarks"), "_self");
+    }
+    if (location.hostname.indexOf("worldclockr") >= 0) {
+      window.open(location.href.replace(/worldclockr/, "iphonemarks"), "_self");
+    }
+  </script>
+  <script type="text/javascript" src="js/Cookie.js"></script>
+  <script type="text/javascript" src="js/predefined.js"></script>
+  <script type="text/javascript" src="js/dice.js"></script>
+  <script type="text/javascript">
+    window.google_analytics_uacct = "UA-622955-52";
+  </script>
+
+  <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-2978022315720013",
+            enable_page_level_ads: true
+       });
+  </script>
+
+  <link rel="alternate" type="application/atom+xml" title="Piet Jonas News - Atom" href="http://pietjonas.blogspot.com/feeds/posts/default" />
+  <link rel="alternate" type="application/rss+xml" title="Piet Jonas News - RSS" href="http://pietjonas.blogspot.com/feeds/posts/default?alt=rss" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body onload="setup()" onorientationchange="orientationChanged()">
+
+
+
+  <div style="position: relative; height: 5px; background: url('dropShadow.png'); margin-bottom: 10px;"></div>
+
+  <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- LetterDice - Responsive -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2978022315720013"
+       data-ad-slot="4928449435"
+       data-ad-format="auto"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <div id="Content">
+
+    <div id="Form">
+      <div id="RollHint" class="hint">Da clic en la esfera</div>
+      <div id="DiceSection">
+        <div id="DiceBackground"></div>
+        <div id="Dice">&nbsp;</div>
+        <div id="DiceForeground"></div>
+      </div>
+      <div id="RollHistory" onclick="clearHistory()">&nbsp;</div>
+      <img id="ShowSetup" src="img/gear.png" width="24" onclick="showSetup()" />
+      <div style="clear:both"></div>
+      <div id="Setup">
+        <hr />
+        <p></p>
+        <div id="CustomSection">
+          <p>
+            <div id="CustomHint" class="hint">Roll A...Z</div>
+            <input id="CustomLetters" placeholder="dice letters" autocomplete="false" onblur="changeLetters()" />
+            <select id="CustomLettersSelect" onchange="customLettersSelectChanged()">
+              <option value="-1">...</option>
+            </select>
+          </p>
+        </div>
+        <select id="CustomSelect" onchange="customSelectChanged()">
+          <option value="-1">Custom</option>
+        </select>
+        <p></p>
+        <p>
+          <button onclick="closeSetup()">Cerrar</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    <!--
+    google_ad_client = "pub-2978022315720013";
+    /* LetterDice - Box, 300x250, created 7/7/09 */
+    google_ad_slot = "7594607092";
+    google_ad_width = 300;
+    google_ad_height = 250;
+    //-->
+  </script>
+  <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+
+  
+  <script>
+    var gaProperty = 'UA-622955-52';
+    var disableStr = 'ga-disable-' + gaProperty;
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+    }
+    function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+        alert('Das Tracking ist jetzt deaktiviert');
+    }
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-622955-52', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+  </script>
+
+</body>
+
+</html>

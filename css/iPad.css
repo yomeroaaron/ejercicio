@@ -1,0 +1,18 @@
+    #Form {
+      width: 570px;
+    }
+
+    #DiceSection {
+      width: 500px;
+      height: 500px;
+      background-image: url("dice@2x.png");
+    }
+
+    #Dice {
+      font-size: 330px;
+      line-height: 500px;
+    }
+
+    #DiceForeground {
+      background-image: url("dice@2x.png");
+    }
